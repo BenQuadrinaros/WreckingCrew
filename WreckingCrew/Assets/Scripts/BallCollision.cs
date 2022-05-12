@@ -10,8 +10,13 @@ public class BallCollision : MonoBehaviour
     public float force;
     public float upwardModfier;
     public Camera camera;
+    public GameObject VFX_Exploasion;
+    public AudioSource audioSource;
+    public AudioClip OpenDoorSound;
+
     void Start()
     {
+        audioSource= GetComponent<AudioSource>();
 
     }
 
@@ -27,6 +32,8 @@ public class BallCollision : MonoBehaviour
         {
             
             CheckCollision();
+            Instantiate(VFX_Exploasion, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            audioSource.PlayOneShot(OpenDoorSound,1f);
         }
         if(collision.gameObject.tag =="Delux")
         {
@@ -71,6 +78,7 @@ public class BallCollision : MonoBehaviour
 
             hits = Physics.OverlapSphere(hit.point, raduis);
             Debug.Log(transform.position);
+
             foreach (Collider t in hits)
 
             {
@@ -82,7 +90,7 @@ public class BallCollision : MonoBehaviour
                     t.attachedRigidbody.angularDrag = 0;
                     t.attachedRigidbody.useGravity = true;
                     t.attachedRigidbody.AddExplosionForce(force, t.attachedRigidbody.position, raduis, upwardModfier, ForceMode.Impulse);
-
+                    
                 }
 
 
@@ -91,36 +99,36 @@ public class BallCollision : MonoBehaviour
             }
         
     }
-    void CheckCollisionWithoutExp()
-    {
-        RaycastHit hit; 
-        if (Physics.Raycast(camera.ScreenPointToRay(camera.WorldToScreenPoint(transform.position)), out hit))
+    //void CheckCollisionWithoutExp()
+    //{
+    //    RaycastHit hit; 
+    //    if (Physics.Raycast(camera.ScreenPointToRay(camera.WorldToScreenPoint(transform.position)), out hit))
 
-        {
+    //    {
 
-            //Debug.Log("AddExplosionForce");
+    //        //Debug.Log("AddExplosionForce");
 
-            Collider[] hits;
+    //        Collider[] hits;
 
-            hits = Physics.OverlapSphere(hit.point, raduis);
-            Debug.Log(transform.position);
-            foreach (Collider t in hits)
+    //        hits = Physics.OverlapSphere(hit.point, raduis);
+    //        Debug.Log(transform.position);
+    //        foreach (Collider t in hits)
 
-            {
+    //        {
 
-                if (t != null && t.attachedRigidbody != null)
-                {
+    //            if (t != null && t.attachedRigidbody != null)
+    //            {
 
-                    t.attachedRigidbody.drag = 0;
-                    t.attachedRigidbody.angularDrag = 0;
-                    t.attachedRigidbody.useGravity = true;
-                    t.attachedRigidbody.AddForce(transform.rotation.eulerAngles, ForceMode.Impulse);
+    //                t.attachedRigidbody.drag = 0;
+    //                t.attachedRigidbody.angularDrag = 0;
+    //                t.attachedRigidbody.useGravity = true;
+    //                t.attachedRigidbody.AddForce(transform.rotation.eulerAngles, ForceMode.Impulse);
 
-                }
+    //            }
 
 
-            }
+    //        }
 
-        }
-    }
+    //    }
+    //}
 }
