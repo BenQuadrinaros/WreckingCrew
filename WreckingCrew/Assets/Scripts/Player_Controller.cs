@@ -13,10 +13,18 @@ public class Player_Controller : MonoBehaviour
     [SerializeField] float crane_Rotation_Speed = 2.5f;
     #endregion
 
+    #region Chain Components
+    public HingeJoint wreakingBallHingeJoint;
+    public float maxAnchorYValue = 1.5f;
+    private float minAnchorYValue = 0.5f;
+    private float currentAnchorY = 0.0f;
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
         crane_arm = transform.Find("Crane_Arm");
+        minAnchorYValue = wreakingBallHingeJoint.anchor.y;
     }
 
     // Update is called once per frame
@@ -38,6 +46,13 @@ public class Player_Controller : MonoBehaviour
             transform.position += -1*transform.forward * Time.deltaTime * crane_Speed;
         }
 
+        if (TiltFive.Input.GetTrigger() > 0.5f)
+            currentAnchorY = Mathf.Lerp(currentAnchorY, maxAnchorYValue, TiltFive.Input.GetTrigger() * 3 * Time.deltaTime);
+        else if (UnityEngine.Input.GetMouseButton(0))
+            currentAnchorY = Mathf.Lerp(currentAnchorY, maxAnchorYValue, 3 * Time.deltaTime);
+        else
+            currentAnchorY = Mathf.Lerp(currentAnchorY, minAnchorYValue, 3 * Time.deltaTime);
+        wreakingBallHingeJoint.anchor = new Vector3(0, currentAnchorY, 0);
         crane_arm.localRotation = Quaternion.Lerp(crane_arm.localRotation, TiltFive.Wand.GetRotation(), 3*Time.deltaTime);
     }
 }
