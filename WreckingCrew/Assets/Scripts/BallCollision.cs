@@ -39,6 +39,10 @@ public class BallCollision : MonoBehaviour
         {
 
             GetComponent<Rigidbody>().AddForce(new Vector3(0,0,1),ForceMode.Impulse);
+            collision.collider.attachedRigidbody.angularDrag=0;
+            collision.collider.attachedRigidbody.drag=0;
+            Instantiate(VFX_Exploasion, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            audioSource.PlayOneShot(OpenDoorSound,1f);
 
         }
 

@@ -18,7 +18,7 @@ public class Game_Manager : MonoBehaviour
     void Update()
     {
         Vector3 delta_center = player_crane.position - tiltFive_board.position;
-        if(delta_center.sqrMagnitude > 25) {
+        if(delta_center.sqrMagnitude > 10) {
             tiltFive_board.position += delta_center*Time.deltaTime;
         }
     }
