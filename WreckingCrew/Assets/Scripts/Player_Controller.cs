@@ -6,6 +6,8 @@ using TiltFive;
 public class Player_Controller : MonoBehaviour
 {
     private Transform crane_arm;
+    private GameObject UI;
+    bool stunned = false;
 
     #region Crane variables
     [Header("Crane Variables")]
@@ -24,6 +26,7 @@ public class Player_Controller : MonoBehaviour
     void Start()
     {
         crane_arm = transform.Find("Crane_Arm");
+        UI = GameObject.Find("UI");
         minAnchorYValue = wreakingBallHingeJoint.anchor.y;
     }
 
@@ -31,28 +34,45 @@ public class Player_Controller : MonoBehaviour
     void Update()
     {
         TiltFive.Input.TryGetStickTilt(out Vector2 stick_tilt);
-        if(Mathf.Abs(stick_tilt.x) > 0.5f) {
-            transform.Rotate(0, stick_tilt.x * 60 * Time.deltaTime * crane_Rotation_Speed, 0);
-        } else if(UnityEngine.Input.GetKey("a")) {
-            transform.Rotate(0, -1 * 60 * Time.deltaTime * crane_Rotation_Speed, 0);
-        } else if(UnityEngine.Input.GetKey("d")) {
-            transform.Rotate(0, 60 * Time.deltaTime * crane_Rotation_Speed, 0);
-        }
-        if(Mathf.Abs(stick_tilt.y) > 0.5f) {
-            transform.position += transform.forward * stick_tilt.y * Time.deltaTime * crane_Speed;
-        } else if(UnityEngine.Input.GetKey("w")) {
-            transform.position += transform.forward * Time.deltaTime * crane_Speed;
-        } else if(UnityEngine.Input.GetKey("s")) {
-            transform.position += -1*transform.forward * Time.deltaTime * crane_Speed;
+        if (!stunned) { 
+            if(Mathf.Abs(stick_tilt.x) > 0.5f) {
+                transform.Rotate(0, stick_tilt.x * 60 * Time.deltaTime * crane_Rotation_Speed, 0);
+            } else if(UnityEngine.Input.GetKey("a")) {
+                transform.Rotate(0, -1 * 60 * Time.deltaTime * crane_Rotation_Speed, 0);
+            } else if(UnityEngine.Input.GetKey("d")) {
+                transform.Rotate(0, 60 * Time.deltaTime * crane_Rotation_Speed, 0);
+            }
+            if(Mathf.Abs(stick_tilt.y) > 0.5f) {
+                transform.position += transform.forward * stick_tilt.y * Time.deltaTime * crane_Speed;
+            } else if(UnityEngine.Input.GetKey("w")) {
+                transform.position += transform.forward * Time.deltaTime * crane_Speed;
+                UI.transform.position += transform.forward * Time.deltaTime * crane_Speed;
+            } else if(UnityEngine.Input.GetKey("s")) {
+                transform.position += -1*transform.forward * Time.deltaTime * crane_Speed;
+                UI.transform.position += -1 * transform.forward * Time.deltaTime * crane_Speed;
+            }
+
+            if (TiltFive.Input.GetTrigger() > 0.5f)
+                currentAnchorY = Mathf.Lerp(currentAnchorY, maxAnchorYValue, TiltFive.Input.GetTrigger() * 3 * Time.deltaTime);
+            else if (UnityEngine.Input.GetMouseButton(0))
+                currentAnchorY = Mathf.Lerp(currentAnchorY, maxAnchorYValue, 3 * Time.deltaTime);
+            else
+                currentAnchorY = Mathf.Lerp(currentAnchorY, minAnchorYValue, 3 * Time.deltaTime);
+            wreakingBallHingeJoint.anchor = new Vector3(0, currentAnchorY, 0);
+            crane_arm.localRotation = Quaternion.Lerp(crane_arm.localRotation, TiltFive.Wand.GetRotation(), 3*Time.deltaTime);
         }
 
-        if (TiltFive.Input.GetTrigger() > 0.5f)
-            currentAnchorY = Mathf.Lerp(currentAnchorY, maxAnchorYValue, TiltFive.Input.GetTrigger() * 3 * Time.deltaTime);
-        else if (UnityEngine.Input.GetMouseButton(0))
-            currentAnchorY = Mathf.Lerp(currentAnchorY, maxAnchorYValue, 3 * Time.deltaTime);
-        else
-            currentAnchorY = Mathf.Lerp(currentAnchorY, minAnchorYValue, 3 * Time.deltaTime);
-        wreakingBallHingeJoint.anchor = new Vector3(0, currentAnchorY, 0);
-        crane_arm.localRotation = Quaternion.Lerp(crane_arm.localRotation, TiltFive.Wand.GetRotation(), 3*Time.deltaTime);
     }
+
+    public void Stun(float stunTime) {
+        stunned = true;
+        StartCoroutine(recover(stunTime));
+    }
+
+
+    private IEnumerator recover(float stunTime) {
+        yield return new WaitForSeconds(stunTime);
+        stunned = false;
+    }
+
 }

@@ -16,5 +16,13 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         clockInside.GetComponent<Image>().fillAmount -= Time.deltaTime / 60;
+        clockInside.GetComponent<Image>().color = new Color(clockInside.GetComponent<Image>().color.r + 
+        Time.deltaTime / 30, clockInside.GetComponent<Image>().color.g, 
+        clockInside.GetComponent<Image>().color.b, clockInside.GetComponent<Image>().color.a);
+        if (clockInside.GetComponent<Image>().fillAmount <= 0.6f) {
+            clockInside.GetComponent<Image>().color = new Color(clockInside.GetComponent<Image>().color.r,
+            clockInside.GetComponent<Image>().color.g - Time.deltaTime / 30,
+            clockInside.GetComponent<Image>().color.b, clockInside.GetComponent<Image>().color.a);
+        }
     }
 }
