@@ -7,6 +7,8 @@ public class Player_Controller : MonoBehaviour
 {
     private Transform crane_arm;
     private GameObject UI;
+    private AudioSource audio_reverse;
+    private bool reversing;
     bool stunned = false;
 
     #region Crane variables
@@ -27,6 +29,8 @@ public class Player_Controller : MonoBehaviour
     {
         crane_arm = transform.Find("Crane_Arm");
         UI = GameObject.Find("UI");
+        audio_reverse = transform.Find("Audio_Reverse").gameObject.GetComponent<AudioSource>();
+        reversing = false;
         minAnchorYValue = wreakingBallHingeJoint.anchor.y;
     }
 
@@ -35,6 +39,7 @@ public class Player_Controller : MonoBehaviour
     {
         TiltFive.Input.TryGetStickTilt(out Vector2 stick_tilt);
         if (!stunned) { 
+            //Rotate player
             if(Mathf.Abs(stick_tilt.x) > 0.5f) {
                 transform.Rotate(0, stick_tilt.x * 60 * Time.deltaTime * crane_Rotation_Speed, 0);
             } else if(UnityEngine.Input.GetKey("a")) {
@@ -42,6 +47,8 @@ public class Player_Controller : MonoBehaviour
             } else if(UnityEngine.Input.GetKey("d")) {
                 transform.Rotate(0, 60 * Time.deltaTime * crane_Rotation_Speed, 0);
             }
+
+            //Move player forward/backward
             if(Mathf.Abs(stick_tilt.y) > 0.5f) {
                 transform.position += transform.forward * stick_tilt.y * Time.deltaTime * crane_Speed;
             } else if(UnityEngine.Input.GetKey("w")) {
@@ -52,6 +59,17 @@ public class Player_Controller : MonoBehaviour
                 UI.transform.position += -1 * transform.forward * Time.deltaTime * crane_Speed;
             }
 
+            //Play/Stop reverse audio
+            if(!reversing && (stick_tilt.y < -0.35f || UnityEngine.Input.GetKey("s"))) {
+                reversing = true;
+                audio_reverse.Play();
+            }
+            if(reversing && !(stick_tilt.y < -0.35f || UnityEngine.Input.GetKey("s"))) {
+                reversing = false;
+                audio_reverse.Stop();
+            }
+
+            //Trigger for lengthen chain
             if (TiltFive.Input.GetTrigger() > 0.5f)
                 currentAnchorY = Mathf.Lerp(currentAnchorY, maxAnchorYValue, TiltFive.Input.GetTrigger() * 3 * Time.deltaTime);
             else if (UnityEngine.Input.GetMouseButton(0))
