@@ -59,7 +59,7 @@ public class FuelTrack : MonoBehaviour
             StartCoroutine(playexpsound());
             collision.gameObject.GetComponent<Player_Controller>().Stun(power);
             //expaudio.PlayOneShot(expclip,1f);
-           explosion();
+            Invoke("explosion", 1.5f);
         }
     }
 
@@ -71,21 +71,23 @@ public class FuelTrack : MonoBehaviour
             collision.gameObject.transform.parent.gameObject.GetComponent<Player_Controller>().Stun(power);
             //expaudio.PlayOneShot(expclip, 1f);
             explosion();
+            
         }
     }
     IEnumerator playexpsound()
     {
         expaudio.PlayOneShot(expclip,1f);
-        yield return 1.0f;
-    }
+        yield return new WaitForSeconds(2.0f);  
+            
+            }
     void explosion() { 
         GameObject exP = Instantiate(explosionParticle, transform.position, Quaternion.identity);
         //expaudio.PlayOneShot(expclip,1f);
         //Destroy(this.gameObject);
-        
-        
+        //StartCoroutine(playexpsound());
+
         Destroy(exP, 1.5f);
-        Destroy(this.gameObject);
+        Destroy(this.gameObject,0.5f);
     }
 
 }
