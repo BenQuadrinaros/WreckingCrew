@@ -14,10 +14,14 @@ public class FuelTrack : MonoBehaviour
     int currentNode = 0;
 
     public GameObject explosionParticle;
+
+    public AudioSource expaudio;
+    public AudioClip expclip;
     // Start is called before the first frame update
     void Start()
     {
         target = pathNodes[0];
+        expaudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -51,23 +55,37 @@ public class FuelTrack : MonoBehaviour
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Player") {
+            Debug.Log("qq");
+            StartCoroutine(playexpsound());
             collision.gameObject.GetComponent<Player_Controller>().Stun(power);
-            explosion();
+            //expaudio.PlayOneShot(expclip,1f);
+           explosion();
         }
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "Wrecking_Ball") {
+            Debug.Log("vv");
+            StartCoroutine(playexpsound());
             collision.gameObject.transform.parent.gameObject.GetComponent<Player_Controller>().Stun(power);
+            //expaudio.PlayOneShot(expclip, 1f);
             explosion();
         }
     }
-
+    IEnumerator playexpsound()
+    {
+        expaudio.PlayOneShot(expclip,1f);
+        yield return 1.0f;
+    }
     void explosion() { 
         GameObject exP = Instantiate(explosionParticle, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        //expaudio.PlayOneShot(expclip,1f);
+        //Destroy(this.gameObject);
+        
+        
         Destroy(exP, 1.5f);
+        Destroy(this.gameObject);
     }
 
 }
