@@ -51,6 +51,7 @@ public class Player_Controller : MonoBehaviour
             //Move player forward/backward
             if(Mathf.Abs(stick_tilt.y) > 0.5f) {
                 transform.position += transform.forward * stick_tilt.y * Time.deltaTime * crane_Speed;
+                UI.transform.position += transform.forward * stick_tilt.y * Time.deltaTime * crane_Speed;
             } else if(UnityEngine.Input.GetKey("w")) {
                 transform.position += transform.forward * Time.deltaTime * crane_Speed;
                 UI.transform.position += transform.forward * Time.deltaTime * crane_Speed;
@@ -58,6 +59,9 @@ public class Player_Controller : MonoBehaviour
                 transform.position += -1*transform.forward * Time.deltaTime * crane_Speed;
                 UI.transform.position += -1 * transform.forward * Time.deltaTime * crane_Speed;
             }
+
+            //Check against world boundaries
+            transform.position = new Vector3(Mathf.Max(-21, Mathf.Min(22.5f, transform.position.x)), transform.position.y, Mathf.Max(-22.5f, Mathf.Min(21, transform.position.z)));
 
             //Play/Stop reverse audio
             if(!reversing && (stick_tilt.y < -0.35f || UnityEngine.Input.GetKey("s"))) {
@@ -92,5 +96,7 @@ public class Player_Controller : MonoBehaviour
         yield return new WaitForSeconds(stunTime);
         stunned = false;
     }
+
+    
 
 }
