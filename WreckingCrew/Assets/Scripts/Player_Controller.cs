@@ -37,6 +37,7 @@ public class Player_Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UI.transform.position = new Vector3(transform.position.x - 16.75f, transform.position.y - 1.15f, transform.position.z - 5.75f);
         TiltFive.Input.TryGetStickTilt(out Vector2 stick_tilt);
         if (!stunned) { 
             //Rotate player
@@ -51,13 +52,13 @@ public class Player_Controller : MonoBehaviour
             //Move player forward/backward
             if(Mathf.Abs(stick_tilt.y) > 0.5f) {
                 transform.position += transform.forward * stick_tilt.y * Time.deltaTime * crane_Speed;
-                UI.transform.position += transform.forward * stick_tilt.y * Time.deltaTime * crane_Speed;
+                //UI.transform.position += transform.forward * stick_tilt.y * Time.deltaTime * crane_Speed;
             } else if(UnityEngine.Input.GetKey("w")) {
                 transform.position += transform.forward * Time.deltaTime * crane_Speed;
-                UI.transform.position += transform.forward * Time.deltaTime * crane_Speed;
+                //UI.transform.position += transform.forward * Time.deltaTime * crane_Speed;
             } else if(UnityEngine.Input.GetKey("s")) {
                 transform.position += -1*transform.forward * Time.deltaTime * crane_Speed;
-                UI.transform.position += -1 * transform.forward * Time.deltaTime * crane_Speed;
+                //UI.transform.position += -1 * transform.forward * Time.deltaTime * crane_Speed;
             }
 
             //Check against world boundaries
