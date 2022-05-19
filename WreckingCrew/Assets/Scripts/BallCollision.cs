@@ -34,6 +34,7 @@ public class BallCollision : MonoBehaviour
             CheckCollision();
             Instantiate(VFX_Exploasion, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
             audioSource.PlayOneShot(OpenDoorSound,1f);
+            StartCoroutine(DestroyCollision(collision));
         }
         if(collision.gameObject.tag =="Delux")
         {
@@ -43,7 +44,7 @@ public class BallCollision : MonoBehaviour
             collision.collider.attachedRigidbody.drag=0;
             Instantiate(VFX_Exploasion, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
             audioSource.PlayOneShot(OpenDoorSound,1f);
-
+            StartCoroutine(DestroyCollision(collision)); 
         }
 
 
@@ -102,6 +103,12 @@ public class BallCollision : MonoBehaviour
 
             }
         
+    }
+    IEnumerator DestroyCollision(Collision collision)
+    {
+        
+        yield return new WaitForSeconds(1.0f);
+        Destroy(collision.gameObject); 
     }
     //void CheckCollisionWithoutExp()
     //{
