@@ -14,8 +14,6 @@ GameObject:
   - component: {fileID: 3998468122873377647}
   - component: {fileID: 3998468122873377632}
   - component: {fileID: 4870201556506453001}
-  - component: {fileID: 4870201556506453000}
-  - component: {fileID: 4870201556506453047}
   m_Layer: 0
   m_Name: Plane.003_cell.036
   m_TagString: Untagged
@@ -36,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 40
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4870201556506453002
 MeshFilter:
@@ -133,33 +131,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &4870201556506453000
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149822595950448142}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.026759226, y: 0.026046706, z: 0.02026606}
-  m_Center: {x: 0.0064702765, y: -0.00041262704, z: 0.00021631033}
---- !u!135 &4870201556506453047
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 149822595950448142}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.013379613
-  m_Center: {x: 0.0064702765, y: -0.00041262704, z: 0.00021631033}
 --- !u!1 &388558378362973342
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,8 +145,6 @@ GameObject:
   - component: {fileID: 3998468123115789350}
   - component: {fileID: 3998468123115789351}
   - component: {fileID: 6165858978393968360}
-  - component: {fileID: 6165858978393968151}
-  - component: {fileID: 6165858978393968150}
   m_Layer: 0
   m_Name: Plane.003_cell.032
   m_TagString: Untagged
@@ -196,7 +165,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 36
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3304941184573122698
 MeshFilter:
@@ -293,33 +262,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &6165858978393968151
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388558378362973342}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.015197994, y: 0.004885743, z: 0.029873244}
-  m_Center: {x: -0.0016376197, y: 0.0009383232, z: 0.00046908009}
---- !u!135 &6165858978393968150
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 388558378362973342}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.014936622
-  m_Center: {x: -0.0016376197, y: 0.0009383232, z: 0.00046908009}
 --- !u!1 &717482882512905141
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,8 +276,6 @@ GameObject:
   - component: {fileID: 3998468122665635072}
   - component: {fileID: 3998468122665635073}
   - component: {fileID: 4901993031862019356}
-  - component: {fileID: 4901993031862019355}
-  - component: {fileID: 4901993031862019354}
   m_Layer: 0
   m_Name: Plane.003_cell.030
   m_TagString: Untagged
@@ -356,7 +296,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 34
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3001527862850475557
 MeshFilter:
@@ -452,33 +392,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &4901993031862019355
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717482882512905141}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.00042182533, y: 0.0009467087, z: 0.000080859645}
-  m_Center: {x: -0.000055141303, y: -0.00023657257, z: 0.000020214316}
---- !u!135 &4901993031862019354
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717482882512905141}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.00047335436
-  m_Center: {x: -0.000055141303, y: -0.00023657257, z: 0.000020214316}
 --- !u!1 &808621899992576211
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,8 +406,6 @@ GameObject:
   - component: {fileID: 3998468122514012403}
   - component: {fileID: 3998468122514012404}
   - component: {fileID: 4764557880794413606}
-  - component: {fileID: 4764557880794413605}
-  - component: {fileID: 4764557880794413604}
   m_Layer: 0
   m_Name: Plane.003_cell.035
   m_TagString: Untagged
@@ -515,7 +426,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 39
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4764557880794413607
 MeshFilter:
@@ -612,33 +523,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &4764557880794413605
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808621899992576211}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.024815215, y: 0.027058614, z: 0.013576332}
-  m_Center: {x: 0.0066815754, y: 0.0035785355, z: 0.0014507796}
---- !u!135 &4764557880794413604
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808621899992576211}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.013529307
-  m_Center: {x: 0.0066815754, y: 0.0035785355, z: 0.0014507796}
 --- !u!1 &1134244122513601286
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,8 +537,6 @@ GameObject:
   - component: {fileID: 3998468122541392003}
   - component: {fileID: 3998468122541392004}
   - component: {fileID: 4973897011182712262}
-  - component: {fileID: 4973897011182712261}
-  - component: {fileID: 4973897011182712260}
   m_Layer: 0
   m_Name: Plane.003_cell.003
   m_TagString: Untagged
@@ -675,7 +557,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1270525540853590249
 MeshFilter:
@@ -772,33 +654,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &4973897011182712261
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134244122513601286}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.02696376, y: 0.027845612, z: 0.01814682}
-  m_Center: {x: 0.0024313335, y: -0.009279162, z: -0.0008189304}
---- !u!135 &4973897011182712260
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1134244122513601286}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.013922806
-  m_Center: {x: 0.0024313335, y: -0.009279162, z: -0.0008189304}
 --- !u!1 &1142993211811217730
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,8 +668,6 @@ GameObject:
   - component: {fileID: 3998468124180481897}
   - component: {fileID: 3998468124180481898}
   - component: {fileID: 5052486253033294220}
-  - component: {fileID: 5052486253033294219}
-  - component: {fileID: 5052486253033294218}
   m_Layer: 0
   m_Name: Plane.003_cell.014
   m_TagString: Untagged
@@ -835,7 +688,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 18
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5052486253033294221
 MeshFilter:
@@ -932,33 +785,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &5052486253033294219
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142993211811217730}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.025464553, y: 0.025277728, z: 0.025687084}
-  m_Center: {x: -0.0019037281, y: 0.00836872, z: 0.0003037941}
---- !u!135 &5052486253033294218
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142993211811217730}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.012843542
-  m_Center: {x: -0.0019037281, y: 0.00836872, z: 0.0003037941}
 --- !u!1 &1373085225689414480
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,8 +799,6 @@ GameObject:
   - component: {fileID: 3998468122994434984}
   - component: {fileID: 3998468122994434985}
   - component: {fileID: 7262739252250693917}
-  - component: {fileID: 7262739252250693916}
-  - component: {fileID: 7262739252250693915}
   m_Layer: 0
   m_Name: Plane.003_cell.027
   m_TagString: Untagged
@@ -995,7 +819,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 31
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1812141945595920697
 MeshFilter:
@@ -1092,33 +916,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &7262739252250693916
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373085225689414480}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.03348288, y: 0.034549884, z: 0.020792615}
-  m_Center: {x: -0.010475682, y: -0.003724436, z: -0.0022192416}
---- !u!135 &7262739252250693915
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1373085225689414480}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.017274942
-  m_Center: {x: -0.010475682, y: -0.003724436, z: -0.0022192416}
 --- !u!1 &1971290552496736487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1133,8 +930,6 @@ GameObject:
   - component: {fileID: 3998468124054242978}
   - component: {fileID: 3998468124054242979}
   - component: {fileID: 7783083785526600034}
-  - component: {fileID: 7783083785526600033}
-  - component: {fileID: 7783083785526600032}
   m_Layer: 0
   m_Name: Plane.003_cell.029
   m_TagString: Untagged
@@ -1155,7 +950,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 33
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7148059699735805178
 MeshFilter:
@@ -1252,33 +1047,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &7783083785526600033
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971290552496736487}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.013631068, y: 0.027231066, z: 0.0051897164}
-  m_Center: {x: 0.0019138996, y: 0.0025196108, z: -0.0003251775}
---- !u!135 &7783083785526600032
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971290552496736487}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.013615533
-  m_Center: {x: 0.0019138996, y: 0.0025196108, z: -0.0003251775}
 --- !u!1 &1988949258383079156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,8 +1061,6 @@ GameObject:
   - component: {fileID: 3998468122393453800}
   - component: {fileID: 3998468122393453801}
   - component: {fileID: 8405524193656363132}
-  - component: {fileID: 8405524193656363131}
-  - component: {fileID: 8405524193656363130}
   m_Layer: 0
   m_Name: Plane.003_cell.005
   m_TagString: Untagged
@@ -1315,7 +1081,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &450853746235128151
 MeshFilter:
@@ -1411,33 +1177,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &8405524193656363131
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988949258383079156}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.0005126929, y: 0.0015042135, z: 0.0002367418}
-  m_Center: {x: 0.000080249905, y: -0.00018322756, z: 0.00005369904}
---- !u!135 &8405524193656363130
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988949258383079156}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.0007521068
-  m_Center: {x: 0.000080249905, y: -0.00018322756, z: 0.00005369904}
 --- !u!1 &2434709355128651514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,8 +1191,6 @@ GameObject:
   - component: {fileID: 3998468122534550175}
   - component: {fileID: 3998468122534550160}
   - component: {fileID: 9058420822785917083}
-  - component: {fileID: 9058420822785917082}
-  - component: {fileID: 9058420822785917081}
   m_Layer: 0
   m_Name: Plane.003_cell.026
   m_TagString: Untagged
@@ -1474,7 +1211,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 30
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &9058420822785917084
 MeshFilter:
@@ -1571,33 +1308,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &9058420822785917082
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2434709355128651514}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.02612384, y: 0.02543973, z: 0.03051194}
-  m_Center: {x: 0.0062859408, y: 0.0011135673, z: -0.0002826354}
---- !u!135 &9058420822785917081
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2434709355128651514}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.01525597
-  m_Center: {x: 0.0062859408, y: 0.0011135673, z: -0.0002826354}
 --- !u!1 &2582727405507586293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1612,8 +1322,6 @@ GameObject:
   - component: {fileID: 3998468122230303702}
   - component: {fileID: 3998468122230303703}
   - component: {fileID: 5267780348058300828}
-  - component: {fileID: 5267780348058300827}
-  - component: {fileID: 5267780348058300826}
   m_Layer: 0
   m_Name: Plane.003_cell
   m_TagString: Untagged
@@ -1634,7 +1342,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 4
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4961600120386219503
 MeshFilter:
@@ -1731,33 +1439,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &5267780348058300827
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2582727405507586293}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.030553263, y: 0.028395293, z: 0.032066297}
-  m_Center: {x: -0.004894636, y: 0.0048129414, z: 0.0035765537}
---- !u!135 &5267780348058300826
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2582727405507586293}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.016033148
-  m_Center: {x: -0.004894636, y: 0.0048129414, z: 0.0035765537}
 --- !u!1 &2760623422459282526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,8 +1453,6 @@ GameObject:
   - component: {fileID: 3998468122585893699}
   - component: {fileID: 3998468122585893700}
   - component: {fileID: 6429388532076229448}
-  - component: {fileID: 6429388532076229495}
-  - component: {fileID: 6429388532076229494}
   m_Layer: 0
   m_Name: Plane.003_cell.007
   m_TagString: Untagged
@@ -1794,7 +1473,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 11
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6429388532076229449
 MeshFilter:
@@ -1891,33 +1570,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &6429388532076229495
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2760623422459282526}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.013448415, y: 0.017424751, z: 0.016382964}
-  m_Center: {x: -0.0025670554, y: 0.00019526432, z: -0.00021508425}
---- !u!135 &6429388532076229494
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2760623422459282526}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.008712376
-  m_Center: {x: -0.0025670554, y: 0.00019526432, z: -0.00021508425}
 --- !u!1 &2988869226850250847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,8 +1584,6 @@ GameObject:
   - component: {fileID: 3998468124000176505}
   - component: {fileID: 3998468124000176506}
   - component: {fileID: 51883065283989797}
-  - component: {fileID: 51883065283989796}
-  - component: {fileID: 51883065283989795}
   m_Layer: 0
   m_Name: TriangleRoof.002
   m_TagString: Untagged
@@ -1954,7 +1604,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 46
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4303932439035962378
 MeshFilter:
@@ -2050,33 +1700,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &51883065283989796
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2988869226850250847}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.058518574, y: 0.050277747, z: 0.04056498}
-  m_Center: {x: 0.000008714385, y: -0.014412778, z: 0.02028249}
---- !u!135 &51883065283989795
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2988869226850250847}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.029259287
-  m_Center: {x: 0.000008714385, y: -0.014412778, z: 0.02028249}
 --- !u!1 &3075198519600501960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2091,8 +1714,6 @@ GameObject:
   - component: {fileID: 3998468123708528813}
   - component: {fileID: 3998468123708528814}
   - component: {fileID: 5624570052180590291}
-  - component: {fileID: 5624570052180590290}
-  - component: {fileID: 5624570052180590289}
   m_Layer: 0
   m_Name: Plane.003_cell.031
   m_TagString: Untagged
@@ -2113,7 +1734,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 35
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4243700446726576533
 MeshFilter:
@@ -2210,33 +1831,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &5624570052180590290
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3075198519600501960}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.021730574, y: 0.024879348, z: 0.02136813}
-  m_Center: {x: -0.0039671315, y: 0.0032879894, z: -0.0018195544}
---- !u!135 &5624570052180590289
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3075198519600501960}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.012439674
-  m_Center: {x: -0.0039671315, y: 0.0032879894, z: -0.0018195544}
 --- !u!1 &3129114683078118431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,8 +1845,6 @@ GameObject:
   - component: {fileID: 3998468122782863422}
   - component: {fileID: 3998468122782863423}
   - component: {fileID: 8371191144292134181}
-  - component: {fileID: 8371191144292134180}
-  - component: {fileID: 8371191144292134179}
   m_Layer: 0
   m_Name: Plane.003_cell.009
   m_TagString: Untagged
@@ -2273,7 +1865,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 13
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8371191144292134182
 MeshFilter:
@@ -2370,33 +1962,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &8371191144292134180
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3129114683078118431}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.019286208, y: 0.024579499, z: 0.022651132}
-  m_Center: {x: 0.002175784, y: -0.0065642097, z: -0.00024161996}
---- !u!135 &8371191144292134179
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3129114683078118431}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.012289749
-  m_Center: {x: 0.002175784, y: -0.0065642097, z: -0.00024161996}
 --- !u!1 &3265000457676686693
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,8 +1976,6 @@ GameObject:
   - component: {fileID: 3998468122228449717}
   - component: {fileID: 3998468122228449718}
   - component: {fileID: 4631686120780363183}
-  - component: {fileID: 4631686120780363182}
-  - component: {fileID: 4631686120780363181}
   m_Layer: 0
   m_Name: Plane.003_cell.001
   m_TagString: Untagged
@@ -2433,7 +1996,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4044636561562710202
 MeshFilter:
@@ -2529,33 +2092,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &4631686120780363182
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3265000457676686693}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.016346164, y: 0.007908362, z: 0.0011333951}
-  m_Center: {x: 0.0050428933, y: -0.00013877646, z: 0.00042448568}
---- !u!135 &4631686120780363181
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3265000457676686693}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.008173082
-  m_Center: {x: 0.0050428933, y: -0.00013877646, z: 0.00042448568}
 --- !u!1 &3300301403353266972
 GameObject:
   m_ObjectHideFlags: 0
@@ -2570,8 +2106,6 @@ GameObject:
   - component: {fileID: 3998468122230303658}
   - component: {fileID: 3998468122230303659}
   - component: {fileID: 5241907163371304158}
-  - component: {fileID: 5241907163371304157}
-  - component: {fileID: 5241907163371304156}
   m_Layer: 0
   m_Name: Plane.003_cell.004
   m_TagString: Untagged
@@ -2592,7 +2126,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3058451533725622517
 MeshFilter:
@@ -2689,33 +2223,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &5241907163371304157
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3300301403353266972}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.033064466, y: 0.019623686, z: 0.028273262}
-  m_Center: {x: 0.00043849275, y: 0.0073130564, z: -0.0000011343507}
---- !u!135 &5241907163371304156
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3300301403353266972}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.016532233
-  m_Center: {x: 0.00043849275, y: 0.0073130564, z: -0.0000011343507}
 --- !u!1 &3360839586166535557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2730,8 +2237,6 @@ GameObject:
   - component: {fileID: 3998468122548663901}
   - component: {fileID: 3998468122548663902}
   - component: {fileID: 4775190152809205951}
-  - component: {fileID: 4775190152809205950}
-  - component: {fileID: 4775190152809205949}
   m_Layer: 0
   m_Name: Plane.003_cell.013
   m_TagString: Untagged
@@ -2752,7 +2257,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 17
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4775190152809205936
 MeshFilter:
@@ -2849,211 +2354,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &4775190152809205950
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3360839586166535557}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.026416969, y: 0.029536834, z: 0.02507319}
-  m_Center: {x: -0.0050672176, y: 0.00019565548, z: -0.00011552915}
---- !u!135 &4775190152809205949
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3360839586166535557}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.014768417
-  m_Center: {x: -0.0050672176, y: 0.00019565548, z: -0.00011552915}
---- !u!1 &3475753136604706149
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5672175300579781670}
-  - component: {fileID: 1570405047928817714}
-  m_Layer: 0
-  m_Name: Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &5672175300579781670
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3475753136604706149}
-  m_LocalRotation: {x: 0.52327543, y: -0.34203398, z: 0.72694236, w: 0.28416628}
-  m_LocalPosition: {x: -4.0762453, y: 5.903862, z: -1.005454}
-  m_LocalScale: {x: 100.00001, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!108 &1570405047928817714
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3475753136604706149}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1000
-  m_Range: 10
-  m_SpotAngle: 45
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!1 &3809960271935178044
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 387090462201341187}
-  - component: {fileID: 2281782392817416887}
-  - component: {fileID: 1285402826146220591}
-  m_Layer: 0
-  m_Name: Plane.003
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &387090462201341187
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3809960271935178044}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 20, y: 0.80486953, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 100}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2281782392817416887
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3809960271935178044}
-  m_Mesh: {fileID: -7196802604745430461, guid: 9408e721567952a4ba4cd172a2bd3920, type: 3}
---- !u!23 &1285402826146220591
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3809960271935178044}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 4632208036162555797, guid: 9408e721567952a4ba4cd172a2bd3920, type: 3}
-  - {fileID: 8992934318045909824, guid: 9408e721567952a4ba4cd172a2bd3920, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3998468123328456274
 GameObject:
   m_ObjectHideFlags: 0
@@ -3159,81 +2459,6 @@ Transform:
   m_Father: {fileID: 3998468123557885880}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4004832018930154996
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6092874597398557649}
-  - component: {fileID: 5851603507907645234}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &6092874597398557649
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4004832018930154996}
-  m_LocalRotation: {x: 0.09062851, y: 0.89379627, z: -0.20997299, w: 0.3857799}
-  m_LocalPosition: {x: -7.3588915, y: 4.958309, z: 6.925791}
-  m_LocalScale: {x: 100, y: 100.00001, z: 99.99999}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!20 &5851603507907645234
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4004832018930154996}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 2
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.099999994
-  far clip plane: 100
-  field of view: 26.991467
-  orthographic: 0
-  orthographic size: 0.0023999608
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
 --- !u!1 &4185265509753857245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3248,8 +2473,6 @@ GameObject:
   - component: {fileID: 3998468122630441786}
   - component: {fileID: 3998468122630441787}
   - component: {fileID: 8647069900697233707}
-  - component: {fileID: 8647069900697233706}
-  - component: {fileID: 8647069900697233705}
   m_Layer: 0
   m_Name: Plane.003_cell.021
   m_TagString: Untagged
@@ -3270,7 +2493,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 25
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8647069900697233708
 MeshFilter:
@@ -3366,33 +2589,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &8647069900697233706
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4185265509753857245}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.00013797014, y: 0.00024647795, z: 0.000045443765}
-  m_Center: {x: 0.000004772992, y: -0.00006149261, z: 0.0000113612405}
---- !u!135 &8647069900697233705
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4185265509753857245}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.00012323898
-  m_Center: {x: 0.000004772992, y: -0.00006149261, z: 0.0000113612405}
 --- !u!1 &4256422734159629054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3407,8 +2603,6 @@ GameObject:
   - component: {fileID: 3998468122332591301}
   - component: {fileID: 3998468122332591302}
   - component: {fileID: 5147750935381434177}
-  - component: {fileID: 5147750935381434176}
-  - component: {fileID: 5147750935381434191}
   m_Layer: 0
   m_Name: Plane.003_cell.041
   m_TagString: Untagged
@@ -3429,7 +2623,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 44
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6940400998270942772
 MeshFilter:
@@ -3525,33 +2719,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &5147750935381434176
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4256422734159629054}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.0003115809, y: 0.0007914816, z: 0.00073263276}
-  m_Center: {x: 0.000041761992, y: 0.0000028899372, z: -0.000049339076}
---- !u!135 &5147750935381434191
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4256422734159629054}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.0003957408
-  m_Center: {x: 0.000041761992, y: 0.0000028899372, z: -0.000049339076}
 --- !u!1 &4304315633288320713
 GameObject:
   m_ObjectHideFlags: 0
@@ -3584,9 +2751,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3998468123557885880}
-  - {fileID: 6092874597398557649}
-  - {fileID: 5672175300579781670}
-  - {fileID: 387090462201341187}
   - {fileID: 9140990353318394609}
   - {fileID: 4631686120780363168}
   - {fileID: 2284255955179070422}
@@ -3700,8 +2864,6 @@ GameObject:
   - component: {fileID: 3998468123073404986}
   - component: {fileID: 3998468123073404987}
   - component: {fileID: 4683047862629365190}
-  - component: {fileID: 4683047862629365189}
-  - component: {fileID: 4683047862629365188}
   m_Layer: 0
   m_Name: Plane.003_cell.028
   m_TagString: Untagged
@@ -3722,7 +2884,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 32
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1707506048788688071
 MeshFilter:
@@ -3819,33 +2981,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &4683047862629365189
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4586236879505694705}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.022272596, y: 0.02286744, z: 0.024099585}
-  m_Center: {x: -0.005603374, y: 0.00040845657, z: 0.0016269123}
---- !u!135 &4683047862629365188
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4586236879505694705}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.012049792
-  m_Center: {x: -0.005603374, y: 0.00040845657, z: 0.0016269123}
 --- !u!1 &4739745512146419327
 GameObject:
   m_ObjectHideFlags: 0
@@ -3860,8 +2995,6 @@ GameObject:
   - component: {fileID: 3998468122212573454}
   - component: {fileID: 3998468122212573455}
   - component: {fileID: 5614329903010681534}
-  - component: {fileID: 5614329903010681533}
-  - component: {fileID: 5614329903010681532}
   m_Layer: 0
   m_Name: Plane.003_cell.024
   m_TagString: Untagged
@@ -3882,7 +3015,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 28
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4161220164293396156
 MeshFilter:
@@ -3978,33 +3111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &5614329903010681533
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4739745512146419327}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &5614329903010681532
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4739745512146419327}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4833467217539835891
 GameObject:
   m_ObjectHideFlags: 0
@@ -4019,8 +3125,6 @@ GameObject:
   - component: {fileID: 3998468123598091128}
   - component: {fileID: 3998468123598091129}
   - component: {fileID: 4833467217539835890}
-  - component: {fileID: 4833467217539835889}
-  - component: {fileID: 4833467217539835888}
   m_Layer: 0
   m_Name: Plane.003_cell.040
   m_TagString: Untagged
@@ -4041,7 +3145,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 43
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7384239932799414237
 MeshFilter:
@@ -4138,33 +3242,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &4833467217539835889
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4833467217539835891}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.02441606, y: 0.034072854, z: 0.028920678}
-  m_Center: {x: 0.0024835058, y: -0.0063662846, z: -0.0019579306}
---- !u!135 &4833467217539835888
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4833467217539835891}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.017036427
-  m_Center: {x: 0.0024835058, y: -0.0063662846, z: -0.0019579306}
 --- !u!1 &4953073063980236861
 GameObject:
   m_ObjectHideFlags: 0
@@ -4179,8 +3256,6 @@ GameObject:
   - component: {fileID: 3998468123785841179}
   - component: {fileID: 3998468123785841180}
   - component: {fileID: 4953073063980236860}
-  - component: {fileID: 4953073063980236859}
-  - component: {fileID: 4953073063980236858}
   m_Layer: 0
   m_Name: Plane.003_cell.018
   m_TagString: Untagged
@@ -4201,7 +3276,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 22
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3737862076283356227
 MeshFilter:
@@ -4298,33 +3373,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &4953073063980236859
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4953073063980236861}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.019350406, y: 0.006774615, z: 0.024042772}
-  m_Center: {x: 0.00026440434, y: -0.0021492061, z: 0.0007905391}
---- !u!135 &4953073063980236858
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4953073063980236861}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.012021386
-  m_Center: {x: 0.00026440434, y: -0.0021492061, z: 0.0007905391}
 --- !u!1 &5029472893448264242
 GameObject:
   m_ObjectHideFlags: 0
@@ -4339,8 +3387,6 @@ GameObject:
   - component: {fileID: 3998468122619824745}
   - component: {fileID: 3998468122619824746}
   - component: {fileID: 4850672852558118816}
-  - component: {fileID: 4850672852558118831}
-  - component: {fileID: 4850672852558118830}
   m_Layer: 0
   m_Name: Plane.003_cell.020
   m_TagString: Untagged
@@ -4361,7 +3407,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 24
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4850672852558118817
 MeshFilter:
@@ -4458,33 +3504,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &4850672852558118831
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5029472893448264242}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.013793626, y: 0.025916636, z: 0.019298736}
-  m_Center: {x: -0.0016012373, y: 0.0025773174, z: -0.00060376746}
---- !u!135 &4850672852558118830
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5029472893448264242}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.012958318
-  m_Center: {x: -0.0016012373, y: 0.0025773174, z: -0.00060376746}
 --- !u!1 &5062620111894368590
 GameObject:
   m_ObjectHideFlags: 0
@@ -4499,8 +3518,6 @@ GameObject:
   - component: {fileID: 3998468122255924710}
   - component: {fileID: 3998468122255924711}
   - component: {fileID: 5062620111894368589}
-  - component: {fileID: 5062620111894368588}
-  - component: {fileID: 5062620111894368587}
   m_Layer: 0
   m_Name: Plane.003_cell.039
   m_TagString: Untagged
@@ -4521,7 +3538,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 42
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7902329916800820050
 MeshFilter:
@@ -4618,33 +3635,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &5062620111894368588
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5062620111894368590}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.017945247, y: 0.025574202, z: 0.021540893}
-  m_Center: {x: 0.0036470995, y: -0.001547274, z: -0.00130684}
---- !u!135 &5062620111894368587
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5062620111894368590}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.012787101
-  m_Center: {x: 0.0036470995, y: -0.001547274, z: -0.00130684}
 --- !u!1 &5401659977882528737
 GameObject:
   m_ObjectHideFlags: 0
@@ -4659,8 +3649,6 @@ GameObject:
   - component: {fileID: 3998468123503907860}
   - component: {fileID: 3998468123503907861}
   - component: {fileID: 5401659977882528736}
-  - component: {fileID: 5401659977882528751}
-  - component: {fileID: 5401659977882528750}
   m_Layer: 0
   m_Name: Plane.003_cell.012
   m_TagString: Untagged
@@ -4681,7 +3669,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 16
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7139103807729586316
 MeshFilter:
@@ -4778,33 +3766,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &5401659977882528751
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5401659977882528737}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.040059663, y: 0.020359188, z: 0.026436204}
-  m_Center: {x: 0.0009746272, y: 0.0076873405, z: -0.0012251383}
---- !u!135 &5401659977882528750
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5401659977882528737}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.020029832
-  m_Center: {x: 0.0009746272, y: 0.0076873405, z: -0.0012251383}
 --- !u!1 &5758383685869323634
 GameObject:
   m_ObjectHideFlags: 0
@@ -4819,8 +3780,6 @@ GameObject:
   - component: {fileID: 3998468123998092985}
   - component: {fileID: 3998468123998092986}
   - component: {fileID: 5758383685869323633}
-  - component: {fileID: 5758383685869323632}
-  - component: {fileID: 5758383685869323647}
   m_Layer: 0
   m_Name: Plane.003_cell.022
   m_TagString: Untagged
@@ -4841,7 +3800,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 26
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &101088001112921025
 MeshFilter:
@@ -4938,33 +3897,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &5758383685869323632
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5758383685869323634}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.018966373, y: 0.026121615, z: 0.02111302}
-  m_Center: {x: -0.0042264555, y: -0.0012508149, z: -0.000571404}
---- !u!135 &5758383685869323647
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5758383685869323634}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.013060807
-  m_Center: {x: -0.0042264555, y: -0.0012508149, z: -0.000571404}
 --- !u!1 &6290727437169228849
 GameObject:
   m_ObjectHideFlags: 0
@@ -4979,8 +3911,6 @@ GameObject:
   - component: {fileID: 3998468123052209966}
   - component: {fileID: 3998468123052209967}
   - component: {fileID: 4806421017158323147}
-  - component: {fileID: 4806421017158323146}
-  - component: {fileID: 4806421017158323145}
   m_Layer: 0
   m_Name: Plane.003_cell.017
   m_TagString: Untagged
@@ -5001,7 +3931,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 21
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4806421017158323148
 MeshFilter:
@@ -5098,33 +4028,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &4806421017158323146
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6290727437169228849}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.014988458, y: 0.020401146, z: 0.014653579}
-  m_Center: {x: -0.00060660415, y: -0.0029175002, z: -0.00045836382}
---- !u!135 &4806421017158323145
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6290727437169228849}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.010200573
-  m_Center: {x: -0.00060660415, y: -0.0029175002, z: -0.00045836382}
 --- !u!1 &6293724975604434170
 GameObject:
   m_ObjectHideFlags: 0
@@ -5139,8 +4042,6 @@ GameObject:
   - component: {fileID: 3998468122352421130}
   - component: {fileID: 3998468122352421131}
   - component: {fileID: 6457420015203596070}
-  - component: {fileID: 6457420015203596069}
-  - component: {fileID: 6457420015203596068}
   m_Layer: 0
   m_Name: Plane.003_cell.006
   m_TagString: Untagged
@@ -5161,7 +4062,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6303053032018948789
 MeshFilter:
@@ -5258,33 +4159,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &6457420015203596069
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6293724975604434170}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.023319324, y: 0.025231645, z: 0.018953761}
-  m_Center: {x: 0.0041199373, y: -0.0018843078, z: -0.0010431081}
---- !u!135 &6457420015203596068
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6293724975604434170}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.012615822
-  m_Center: {x: 0.0041199373, y: -0.0018843078, z: -0.0010431081}
 --- !u!1 &6468799314224550684
 GameObject:
   m_ObjectHideFlags: 0
@@ -5299,8 +4173,6 @@ GameObject:
   - component: {fileID: 3998468123681486525}
   - component: {fileID: 3998468123681486526}
   - component: {fileID: 6468799314224550683}
-  - component: {fileID: 6468799314224550682}
-  - component: {fileID: 6468799314224550681}
   m_Layer: 0
   m_Name: Plane.003_cell.037
   m_TagString: Untagged
@@ -5321,7 +4193,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 41
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8838015875219692056
 MeshFilter:
@@ -5418,33 +4290,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &6468799314224550682
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6468799314224550684}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.0039356314, y: 0.00999238, z: 0.013658607}
-  m_Center: {x: 0.00062583387, y: 0.0002389785, z: -0.00013641125}
---- !u!135 &6468799314224550681
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6468799314224550684}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.0068293037
-  m_Center: {x: 0.00062583387, y: 0.0002389785, z: -0.00013641125}
 --- !u!1 &6765567626922860631
 GameObject:
   m_ObjectHideFlags: 0
@@ -5459,8 +4304,6 @@ GameObject:
   - component: {fileID: 3998468123172930099}
   - component: {fileID: 3998468123172930100}
   - component: {fileID: 6765567626922860630}
-  - component: {fileID: 6765567626922860629}
-  - component: {fileID: 6765567626922860628}
   m_Layer: 0
   m_Name: Plane.003_cell.008
   m_TagString: Untagged
@@ -5481,7 +4324,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 12
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3882435974437207482
 MeshFilter:
@@ -5577,33 +4420,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &6765567626922860629
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6765567626922860631}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.00328656, y: 0.0075730416, z: 0.0016127462}
-  m_Center: {x: 0.00056806207, y: -0.00080443674, z: -0.000077104705}
---- !u!135 &6765567626922860628
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6765567626922860631}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.0037865208
-  m_Center: {x: 0.00056806207, y: -0.00080443674, z: -0.000077104705}
 --- !u!1 &7112614329752692897
 GameObject:
   m_ObjectHideFlags: 0
@@ -5618,8 +4434,6 @@ GameObject:
   - component: {fileID: 3998468123851075246}
   - component: {fileID: 3998468123851075247}
   - component: {fileID: 7112614329752692896}
-  - component: {fileID: 7112614329752692911}
-  - component: {fileID: 7112614329752692910}
   m_Layer: 0
   m_Name: Plane.003_cell.023
   m_TagString: Untagged
@@ -5640,7 +4454,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 27
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &45273256270884745
 MeshFilter:
@@ -5737,33 +4551,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &7112614329752692911
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7112614329752692897}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.013239125, y: 0.013631277, z: 0.013596973}
-  m_Center: {x: -0.00024121813, y: -0.0029769465, z: 0.0001638401}
---- !u!135 &7112614329752692910
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7112614329752692897}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.0068156384
-  m_Center: {x: -0.00024121813, y: -0.0029769465, z: 0.0001638401}
 --- !u!1 &7246206591033189311
 GameObject:
   m_ObjectHideFlags: 0
@@ -5778,8 +4565,6 @@ GameObject:
   - component: {fileID: 3998468123935534499}
   - component: {fileID: 3998468123935534500}
   - component: {fileID: 7614688741628653624}
-  - component: {fileID: 7614688741628653607}
-  - component: {fileID: 7614688741628653606}
   m_Layer: 0
   m_Name: Plane.003_cell.015
   m_TagString: Untagged
@@ -5800,7 +4585,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 19
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6999347334716848441
 MeshFilter:
@@ -5897,33 +4682,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &7614688741628653607
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7246206591033189311}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.016337791, y: 0.018474635, z: 0.011055939}
-  m_Center: {x: -0.00056929677, y: -0.00588885, z: 0.0007364097}
---- !u!135 &7614688741628653606
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7246206591033189311}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.009237317
-  m_Center: {x: -0.00056929677, y: -0.00588885, z: 0.0007364097}
 --- !u!1 &7265205868999977038
 GameObject:
   m_ObjectHideFlags: 0
@@ -5938,8 +4696,6 @@ GameObject:
   - component: {fileID: 3998468122359055692}
   - component: {fileID: 3998468122359055693}
   - component: {fileID: 7069523983353824413}
-  - component: {fileID: 7069523983353824412}
-  - component: {fileID: 7069523983353824411}
   m_Layer: 0
   m_Name: Plane.003_cell.033
   m_TagString: Untagged
@@ -5960,7 +4716,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 37
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7069523983353824414
 MeshFilter:
@@ -6057,33 +4813,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &7069523983353824412
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7265205868999977038}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.020509996, y: 0.01723557, z: 0.021275826}
-  m_Center: {x: -0.00056756893, y: -0.0055012656, z: 0.0006389873}
---- !u!135 &7069523983353824411
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7265205868999977038}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.010637913
-  m_Center: {x: -0.00056756893, y: -0.0055012656, z: 0.0006389873}
 --- !u!1 &7361738742923909393
 GameObject:
   m_ObjectHideFlags: 0
@@ -6098,8 +4827,6 @@ GameObject:
   - component: {fileID: 3998468123495216315}
   - component: {fileID: 3998468123495216316}
   - component: {fileID: 6011265806187381128}
-  - component: {fileID: 6011265806187381175}
-  - component: {fileID: 6011265806187381174}
   m_Layer: 0
   m_Name: Plane.003_cell.016
   m_TagString: Untagged
@@ -6120,7 +4847,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 20
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3210558908376002466
 MeshFilter:
@@ -6217,33 +4944,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &6011265806187381175
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7361738742923909393}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.03227231, y: 0.013689676, z: 0.010587166}
-  m_Center: {x: 0.0039191097, y: 0.004535887, z: 0.0014392979}
---- !u!135 &6011265806187381174
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7361738742923909393}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.016136155
-  m_Center: {x: 0.0039191097, y: 0.004535887, z: 0.0014392979}
 --- !u!1 &7387741336055106310
 GameObject:
   m_ObjectHideFlags: 0
@@ -6258,8 +4958,6 @@ GameObject:
   - component: {fileID: 3998468122958188583}
   - component: {fileID: 3998468122958188600}
   - component: {fileID: 6565973103962114972}
-  - component: {fileID: 6565973103962114971}
-  - component: {fileID: 6565973103962114970}
   m_Layer: 0
   m_Name: Plane.003_cell.019
   m_TagString: Untagged
@@ -6280,7 +4978,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 23
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6565973103962114973
 MeshFilter:
@@ -6377,33 +5075,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &6565973103962114971
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7387741336055106310}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.018659685, y: 0.020445153, z: 0.025773443}
-  m_Center: {x: 0.0039080586, y: 0.004622832, z: -0.0020816978}
---- !u!135 &6565973103962114970
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7387741336055106310}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.012886722
-  m_Center: {x: 0.0039080586, y: 0.004622832, z: -0.0020816978}
 --- !u!1 &7791733219015362847
 GameObject:
   m_ObjectHideFlags: 0
@@ -6418,8 +5089,6 @@ GameObject:
   - component: {fileID: 3998468122230303656}
   - component: {fileID: 3998468122230303657}
   - component: {fileID: 7791733219015362846}
-  - component: {fileID: 7791733219015362845}
-  - component: {fileID: 7791733219015362844}
   m_Layer: 0
   m_Name: Plane.003_cell.002
   m_TagString: Untagged
@@ -6440,7 +5109,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2027783540047786990
 MeshFilter:
@@ -6537,33 +5206,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &7791733219015362845
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7791733219015362847}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.014113138, y: 0.015634792, z: 0.029667294}
-  m_Center: {x: 0.001779391, y: 0.0031783737, z: 0.00022003749}
---- !u!135 &7791733219015362844
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7791733219015362847}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.014833647
-  m_Center: {x: 0.001779391, y: 0.0031783737, z: 0.00022003749}
 --- !u!1 &7815280053142339190
 GameObject:
   m_ObjectHideFlags: 0
@@ -6578,8 +5220,6 @@ GameObject:
   - component: {fileID: 3998468122311914286}
   - component: {fileID: 3998468122311914287}
   - component: {fileID: 6474671025855427408}
-  - component: {fileID: 6474671025855427423}
-  - component: {fileID: 6474671025855427422}
   m_Layer: 0
   m_Name: TriangleBase
   m_TagString: Untagged
@@ -6600,7 +5240,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 45
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &347507792660274795
 MeshFilter:
@@ -6697,33 +5337,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &6474671025855427423
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7815280053142339190}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.06, y: 0.09089799, z: 0.0070388755}
-  m_Center: {x: 0.0000000074527, y: 0.0045509944, z: 0.0044089914}
---- !u!135 &6474671025855427422
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7815280053142339190}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.045448996
-  m_Center: {x: 0.0000000074527, y: 0.0045509944, z: 0.0044089914}
 --- !u!1 &8345306193844329667
 GameObject:
   m_ObjectHideFlags: 0
@@ -6738,8 +5351,6 @@ GameObject:
   - component: {fileID: 3998468124117070323}
   - component: {fileID: 3998468124117070324}
   - component: {fileID: 5185857842197503124}
-  - component: {fileID: 5185857842197503123}
-  - component: {fileID: 5185857842197503122}
   m_Layer: 0
   m_Name: Plane.003_cell.010
   m_TagString: Untagged
@@ -6760,7 +5371,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7049908757875764149
 MeshFilter:
@@ -6856,33 +5467,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &5185857842197503123
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8345306193844329667}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!135 &5185857842197503122
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8345306193844329667}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8348615917751791124
 GameObject:
   m_ObjectHideFlags: 0
@@ -6897,8 +5481,6 @@ GameObject:
   - component: {fileID: 3998468122148961316}
   - component: {fileID: 3998468122148961317}
   - component: {fileID: 6649301087399714856}
-  - component: {fileID: 6649301087399714903}
-  - component: {fileID: 6649301087399714902}
   m_Layer: 0
   m_Name: Plane.003_cell.025
   m_TagString: Untagged
@@ -6919,7 +5501,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 29
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &172144211526182946
 MeshFilter:
@@ -7016,33 +5598,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &6649301087399714903
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8348615917751791124}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.019857261, y: 0.014698236, z: 0.02252779}
-  m_Center: {x: -0.00090341317, y: -0.004425999, z: -0.00083010254}
---- !u!135 &6649301087399714902
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8348615917751791124}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.011263895
-  m_Center: {x: -0.00090341317, y: -0.004425999, z: -0.00083010254}
 --- !u!1 &8698153417945529647
 GameObject:
   m_ObjectHideFlags: 0
@@ -7057,8 +5612,6 @@ GameObject:
   - component: {fileID: 3998468122821914492}
   - component: {fileID: 3998468122821914493}
   - component: {fileID: 5644092390221577683}
-  - component: {fileID: 5644092390221577682}
-  - component: {fileID: 5644092390221577681}
   m_Layer: 0
   m_Name: Plane.003_cell.011
   m_TagString: Untagged
@@ -7079,7 +5632,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6148950623258539422
 MeshFilter:
@@ -7176,33 +5729,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &5644092390221577682
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8698153417945529647}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.029320177, y: 0.017047517, z: 0.03450934}
-  m_Center: {x: 0.00084217265, y: 0.005448173, z: 0.0020560832}
---- !u!135 &5644092390221577681
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8698153417945529647}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.01725467
-  m_Center: {x: 0.00084217265, y: 0.005448173, z: 0.0020560832}
 --- !u!1 &9121751999387653425
 GameObject:
   m_ObjectHideFlags: 0
@@ -7217,8 +5743,6 @@ GameObject:
   - component: {fileID: 3998468124158742358}
   - component: {fileID: 3998468124158742359}
   - component: {fileID: 5670824222652519976}
-  - component: {fileID: 5670824222652520023}
-  - component: {fileID: 5670824222652520022}
   m_Layer: 0
   m_Name: Plane.003_cell.034
   m_TagString: Untagged
@@ -7239,7 +5763,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3528518562178124915}
-  m_RootOrder: 38
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3564140138453520745
 MeshFilter:
@@ -7336,33 +5860,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 5000
   radius: 1
-  dragReduction: 10
---- !u!65 &5670824222652520023
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9121751999387653425}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 0.026213303, y: 0.027357426, z: 0.019696387}
-  m_Center: {x: -0.0003809617, y: -0.008987618, z: 0.0023250536}
---- !u!135 &5670824222652520022
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9121751999387653425}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.013678713
-  m_Center: {x: -0.0003809617, y: -0.008987618, z: 0.0023250536}
 --- !u!1001 &3998468122255987098
 PrefabInstance:
   m_ObjectHideFlags: 0
