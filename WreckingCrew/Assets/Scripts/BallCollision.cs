@@ -13,11 +13,11 @@ public class BallCollision : MonoBehaviour
     public GameObject VFX_Exploasion;
     public AudioSource audioSource;
     public AudioClip OpenDoorSound;
-
+    ShakeCamera shakeCamera;
     void Start()
     {
         audioSource= GetComponent<AudioSource>();
-
+        shakeCamera=GameObject.FindGameObjectWithTag("MainCamera").GetComponent<ShakeCamera>();
     }
 
     // Update is called once per frame
@@ -34,6 +34,7 @@ public class BallCollision : MonoBehaviour
             CheckCollision();
             Instantiate(VFX_Exploasion, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
             audioSource.PlayOneShot(OpenDoorSound,1f);
+            shakeCamera.enabled=true;
             StartCoroutine(DestroyCollision(collision));
         }
         if(collision.gameObject.tag =="Delux")
@@ -44,7 +45,9 @@ public class BallCollision : MonoBehaviour
             collision.collider.attachedRigidbody.drag=0;
             Instantiate(VFX_Exploasion, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
             audioSource.PlayOneShot(OpenDoorSound,1f);
+            shakeCamera.enabled=true;
             StartCoroutine(DestroyCollision(collision)); 
+
         }
 
 
