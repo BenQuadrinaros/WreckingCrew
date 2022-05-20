@@ -29,7 +29,6 @@ public class UIManager : MonoBehaviour
 
         //If out of time, switch to game over scene
         if(clockImage.fillAmount <= 0.01f) {
-            PlayerPrefs.SetFloat("destruction", 10000+Random.Range(-2500, 2500));
             SceneManager.LoadSceneAsync(1);
         }
     }

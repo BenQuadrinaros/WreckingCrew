@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WreckingBall : MonoBehaviour
 {
+    void Start() { PlayerPrefs.SetFloat("destruction", 0); }
+
     public AudioSource audio;
     private void OnTriggerEnter(Collider other)
     {
@@ -13,6 +15,7 @@ public class WreckingBall : MonoBehaviour
             if (audio)
             {
                 audio.Play();
+                PlayerPrefs.SetFloat("destruction", PlayerPrefs.GetFloat("destruction") + 500 + Mathf.Floor(Random.Range(250, 500)));
             }
             
         }

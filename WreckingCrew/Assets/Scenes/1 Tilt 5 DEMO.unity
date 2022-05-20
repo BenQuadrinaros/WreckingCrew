@@ -47168,6 +47168,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueRectangleBuilding
       objectReference: {fileID: 0}
+    - target: {fileID: 3486870498402499895, guid: 8389997b36fe6fb4a84749eeecac56e5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4262668673273145229, guid: 8389997b36fe6fb4a84749eeecac56e5, type: 3}
       propertyPath: m_RootOrder
       value: 6
