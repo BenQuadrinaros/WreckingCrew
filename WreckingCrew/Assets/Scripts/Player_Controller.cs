@@ -10,6 +10,10 @@ public class Player_Controller : MonoBehaviour
     private AudioSource audio_reverse;
     private bool reversing;
     bool stunned = false;
+    [Header("Rotation Settins")]
+    public bool rotateWorld = true;
+    public GameObject rotatableWorld;
+    public float rotationSpeed = 60.0f;
 
     #region Crane variables
     [Header("Crane Variables")]
@@ -42,11 +46,20 @@ public class Player_Controller : MonoBehaviour
         if (!stunned) { 
             //Rotate player
             if(Mathf.Abs(stick_tilt.x) > 0.5f) {
-                transform.Rotate(0, stick_tilt.x * 60 * Time.deltaTime * crane_Rotation_Speed, 0);
+                if (!rotateWorld)
+                    transform.Rotate(0, stick_tilt.x * 60 * Time.deltaTime * crane_Rotation_Speed, 0);
+                else
+                    rotatableWorld.transform.RotateAround(transform.position, Vector3.up, stick_tilt.x * rotationSpeed * Time.deltaTime * crane_Rotation_Speed);
             } else if(UnityEngine.Input.GetKey("a")) {
-                transform.Rotate(0, -1 * 60 * Time.deltaTime * crane_Rotation_Speed, 0);
+                if (!rotateWorld)
+                    transform.Rotate(0, -1 * 60 * Time.deltaTime * crane_Rotation_Speed, 0);
+                else
+                    rotatableWorld.transform.RotateAround(transform.position, Vector3.up, -1 * rotationSpeed * Time.deltaTime * crane_Rotation_Speed);
             } else if(UnityEngine.Input.GetKey("d")) {
-                transform.Rotate(0, 60 * Time.deltaTime * crane_Rotation_Speed, 0);
+                if (!rotateWorld)
+                    transform.Rotate(0, 60 * Time.deltaTime * crane_Rotation_Speed, 0);
+                else
+                    rotatableWorld.transform.RotateAround(transform.position, Vector3.up, 1 * rotationSpeed * Time.deltaTime * crane_Rotation_Speed);
             }
 
             //Move player forward/backward
