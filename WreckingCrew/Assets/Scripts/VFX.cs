@@ -6,7 +6,13 @@ public class VFX : MonoBehaviour
 {
     public ParticleSystem[] instantParticles;
     public ParticleSystem[] loopingParticles;
+    public Shake shake;
 
+
+     void Start()
+    {
+        shake=GameObject.FindGameObjectWithTag("Environment").GetComponent<Shake>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Ball"))
@@ -14,6 +20,7 @@ public class VFX : MonoBehaviour
             instantParticles[Random.Range(0, instantParticles.Length)].Play();
             instantParticles[Random.Range(0, instantParticles.Length)].Play();
             Invoke("SpawnLoopingParticles", 1f);
+            shake.shakeobject();
         }
     }
 
