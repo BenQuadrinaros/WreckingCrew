@@ -21,6 +21,9 @@ public class Explosion : MonoBehaviour
 
     void Destroy()
     {
-        Destroy(gameObject);
+        if(Random.Range(0 , 100) > 20)
+        {
+            Destroy(gameObject);
+        }
     }
 }
