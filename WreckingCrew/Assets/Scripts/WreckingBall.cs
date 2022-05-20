@@ -5,15 +5,11 @@ using UnityEngine;
 public class WreckingBall : MonoBehaviour
 {
 
-    public AudioSource audio;
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Delux"))
         {
             Explode(other);
-            //audio.Stop();
-            audio.Play();
         }
     }
 
