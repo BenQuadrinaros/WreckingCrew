@@ -9300,6 +9300,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player_crane: {fileID: 1965650780}
   tiltFive_board: {fileID: 403934726}
+  cloud_clusters:
+  - {fileID: 307893345}
+  - {fileID: 61810208}
+  - {fileID: 1997523365}
 --- !u!20 &406722229 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 5096850156648964928, guid: 9cdaf98efe7c69adca90cde48da559cc, type: 3}
@@ -45847,6 +45851,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d89e33b73fd8d439aac60730c1bd77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotateWorld: 1
+  rotatableWorld: {fileID: 0}
+  rotationSpeed: 60
   crane_Speed: 4
   crane_Rotation_Speed: 2.5
   wreakingBallHingeJoint: {fileID: 1981859032}
