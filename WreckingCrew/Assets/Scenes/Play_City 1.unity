@@ -18245,6 +18245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 130416, guid: 70f277dcf2cdfdd4db7ee0ca76e07767, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 459364, guid: 70f277dcf2cdfdd4db7ee0ca76e07767, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -21232,6 +21236,10 @@ PrefabInstance:
     - target: {fileID: 101568, guid: 59c100dd669d88f46b60555886d4dae7, type: 3}
       propertyPath: m_Name
       value: Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 101568, guid: 59c100dd669d88f46b60555886d4dae7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 454130, guid: 59c100dd669d88f46b60555886d4dae7, type: 3}
       propertyPath: m_RootOrder
@@ -24695,11 +24703,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 85001670381b8594eb76b6a7d3a70ff0, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b96c9b569b3b87e488b77dd1832a10df, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -42668,7 +42676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15d89e33b73fd8d439aac60730c1bd77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateWorld: 1
+  rotateWorld: 0
   rotatableWorld: {fileID: 0}
   rotationSpeed: 60
   crane_Speed: 4
