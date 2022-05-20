@@ -39,6 +39,9 @@ public class GameOver_Manager : MonoBehaviour
             }
         }
 
-        if(TiltFive.Input.GetTrigger() > 0.5f) { SceneManager.LoadSceneAsync(0); }
+        if(TiltFive.Input.GetTrigger() > 0.5f || UnityEngine.Input.GetKey("space")) { SceneManager.LoadSceneAsync(0); }
+
+        
+        if(UnityEngine.Input.GetKey("escape")) { Application.Quit(); }
     }
 }

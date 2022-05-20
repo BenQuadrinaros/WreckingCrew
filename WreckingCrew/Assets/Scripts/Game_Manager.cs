@@ -48,5 +48,7 @@ public class Game_Manager : MonoBehaviour
                 cloud.position += new Vector3(cloud_bounds.x - cloud_bounds.y, 0, 0);
             }
         }
+
+        if(UnityEngine.Input.GetKey("escape")) { Application.Quit(); }
     }
 }
