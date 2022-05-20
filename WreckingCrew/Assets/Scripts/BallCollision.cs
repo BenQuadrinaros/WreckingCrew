@@ -30,14 +30,14 @@ public class BallCollision : MonoBehaviour
     {
         if (collision.gameObject.tag == "Piece")
         {
-            
+            Debug.Log("Piece");
             CheckCollision();
             Instantiate(VFX_Exploasion, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
             audioSource.PlayOneShot(OpenDoorSound,1f);
         }
         if(collision.gameObject.tag =="Delux")
         {
-
+            Debug.Log("Delux");
             GetComponent<Rigidbody>().AddForce(new Vector3(0,0,1),ForceMode.Impulse);
             collision.collider.attachedRigidbody.angularDrag=0;
             collision.collider.attachedRigidbody.drag=0;
