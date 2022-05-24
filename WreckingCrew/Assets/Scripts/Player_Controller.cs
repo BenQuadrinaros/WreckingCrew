@@ -10,6 +10,10 @@ public class Player_Controller : MonoBehaviour
     private AudioSource audio_reverse;
     private bool reversing;
     bool stunned = false;
+    private float stun_timer = 0;
+    private float stun_apex = 0;
+    private Vector3 stun_orientation_position;
+
     [Header("Rotation Settins")]
     public bool rotateWorld = true;
     public GameObject rotatableWorld;
@@ -96,21 +100,27 @@ public class Player_Controller : MonoBehaviour
                 currentAnchorY = Mathf.Lerp(currentAnchorY, minAnchorYValue, 3 * Time.deltaTime);
             wreakingBallHingeJoint.anchor = new Vector3(0, currentAnchorY, 0);
             crane_arm.localRotation = Quaternion.Lerp(crane_arm.localRotation, TiltFive.Wand.GetRotation(), 3*Time.deltaTime);
-        }
+        } else {
+            transform.Rotate(210*Time.deltaTime, 210*Time.deltaTime, 210*Time.deltaTime);
+            if(stun_timer > stun_apex + 0.25f) {
+                transform.position += new Vector3(0, 7.5f*Time.deltaTime, 0);
+            } else if(stun_timer < stun_apex - 0.25f) {
+                transform.position += new Vector3(0, -7.5f*Time.deltaTime, 0);
+            }
 
+            stun_timer -= Time.deltaTime;
+            if(stun_timer < 0) {
+                stunned = false;
+                transform.position = stun_orientation_position;
+                transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
+            }
+        }
     }
 
     public void Stun(float stunTime) {
         stunned = true;
-        StartCoroutine(recover(stunTime));
+        stun_timer = stunTime;
+        stun_apex = stunTime/2;
+        stun_orientation_position = transform.position;
     }
-
-
-    private IEnumerator recover(float stunTime) {
-        yield return new WaitForSeconds(stunTime);
-        stunned = false;
-    }
-
-    
-
 }

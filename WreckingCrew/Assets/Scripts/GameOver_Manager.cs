@@ -10,8 +10,9 @@ public class GameOver_Manager : MonoBehaviour
     public GameObject text_destruction_block;
     private TextMeshProUGUI text_destruction;
     private float destruction_value;
-    private float current_value;
-    private int goal;
+    private float current_value = 0;
+    private int goal = 500;
+    private bool loading = false;
     public List<GameObject> goal_effects;
 
     // Start is called before the first frame update
@@ -19,8 +20,6 @@ public class GameOver_Manager : MonoBehaviour
     {
         text_destruction = text_destruction_block.GetComponent<TextMeshProUGUI>();
         destruction_value = PlayerPrefs.GetFloat("destruction");
-        current_value = 0;
-        goal = 250;
     }
 
     // Update is called once per frame
@@ -39,8 +38,10 @@ public class GameOver_Manager : MonoBehaviour
             }
         }
 
-        if(TiltFive.Input.GetTrigger() > 0.5f || UnityEngine.Input.GetKey("space")) { SceneManager.LoadSceneAsync(0); }
-
+        if(!loading && (TiltFive.Input.GetTrigger() > 0.5f || UnityEngine.Input.GetKey("space"))) { 
+            loading = true;
+            SceneManager.LoadSceneAsync(0);
+        }
         
         if(UnityEngine.Input.GetKey("escape")) { Application.Quit(); }
     }
