@@ -7,7 +7,10 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
     public GameObject clockInside;
+    public GameObject redBar;
     private Image clockImage;
+    float flashTime = 0.5f;
+    float flashTimer = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,9 +30,27 @@ public class UIManager : MonoBehaviour
             clockImage.color.b, clockImage.color.a);
         }
 
+        if (clockImage.fillAmount <= 0.35f) {
+            flash();
+        }
+
         //If out of time, switch to game over scene
         if(clockImage.fillAmount <= 0.01f) {
             SceneManager.LoadSceneAsync(1);
         }
     }
+
+
+    void flash() {
+        if (flashTimer < flashTime)
+        {
+            flashTimer += Time.deltaTime;
+        }
+        else {
+            flashTimer = 0;
+            redBar.SetActive(!redBar.active);
+        }
+    }
+
+
 }
