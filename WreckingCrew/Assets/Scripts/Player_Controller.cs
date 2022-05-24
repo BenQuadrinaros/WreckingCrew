@@ -99,7 +99,8 @@ public class Player_Controller : MonoBehaviour
             else
                 currentAnchorY = Mathf.Lerp(currentAnchorY, minAnchorYValue, 3 * Time.deltaTime);
             wreakingBallHingeJoint.anchor = new Vector3(0, currentAnchorY, 0);
-            crane_arm.localRotation = Quaternion.Lerp(crane_arm.localRotation, TiltFive.Wand.GetRotation(), 3*Time.deltaTime);
+
+            crane_arm.localRotation = TiltFive.Wand.GetRotation();
         } else {
             transform.Rotate(210*Time.deltaTime, 210*Time.deltaTime, 210*Time.deltaTime);
             if(stun_timer > stun_apex + 0.25f) {
