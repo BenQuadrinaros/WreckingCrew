@@ -6,8 +6,8 @@ public class Shake : MonoBehaviour
 {
     // Start is called before the first frame update
     public Vector3 shakerate = new Vector3(0.1f, 0.2f, 0.3f);
-    public float shaketime = 0.5f;
-    public float shakeDertaTime = 0.1f;
+    public float shaketime = 0.05f;
+    //public float shakeDertaTime = 0.01f;
     public void shakeobject()
     {
 
@@ -17,13 +17,12 @@ public class Shake : MonoBehaviour
     public IEnumerator shake_coroutine()
     {
         var oriposition=gameObject.transform.position;
-        for(float i=0; i < shaketime; i += shakeDertaTime)
+        for(float i=0; i < shaketime; i += Time.deltaTime)
         {
             gameObject.transform.position = oriposition +
-                Random.Range(-shakerate.x, shakerate.x) * Vector3.right +
-                Random.Range(-shakerate.y, shakerate.y) * Vector3.up +
-                Random.Range(-shakerate.z, shakerate.z) * Vector3.forward;
-            yield return new WaitForSeconds(shakeDertaTime);
+               Vector3.Lerp(Vector3.zero, shakerate, 2*Time.deltaTime);
+
+            yield return new WaitForSeconds(Time.deltaTime);
         }
         gameObject.transform.position = oriposition;
 
