@@ -132,7 +132,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &95921327978439261
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,7 +262,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &318817372461226539
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,7 +393,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &587316306339125859
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,7 +525,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &594958094045632704
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,7 +655,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &636007905005674364
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,7 +786,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &1042317114437593248
 GameObject:
   m_ObjectHideFlags: 0
@@ -924,7 +918,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &1151687622776122590
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,7 +1049,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &1174543098004652467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,7 +1181,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &1219094164040680154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,7 +1313,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &1221517724653451155
 GameObject:
   m_ObjectHideFlags: 0
@@ -1453,7 +1443,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &1419717758834497076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,7 +1575,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &1478553284587797662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,7 +1705,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &1725725561740139213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,7 +1836,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &1763891556736000419
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,7 +1968,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &1800788415678029319
 GameObject:
   m_ObjectHideFlags: 0
@@ -2115,7 +2100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &2041581918949620794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2247,7 +2231,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &2250757277308557341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2484,7 +2467,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &2322414555877648125
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,7 +2599,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &2357233203495699032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2748,7 +2729,146 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
+--- !u!1 &2479115203922689586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 509040909985879787}
+  - component: {fileID: 2959393281555595004}
+  - component: {fileID: 1551708519816586297}
+  - component: {fileID: 5237278004268703983}
+  - component: {fileID: 7604649717228644612}
+  - component: {fileID: 5784489196486234361}
+  m_Layer: 0
+  m_Name: ScoreText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &509040909985879787
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479115203922689586}
+  m_LocalRotation: {x: 0.2676433, y: 0.060775075, z: -0.016921835, w: 0.9614505}
+  m_LocalPosition: {x: 0, y: 0, z: -3.18}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8902816508545093026}
+  m_Father: {fileID: 4262668673273145229}
+  m_RootOrder: 82
+  m_LocalEulerAnglesHint: {x: 31.112, y: 7.234, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 22, y: 7.82}
+  m_SizeDelta: {x: 1, y: 1}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!223 &2959393281555595004
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479115203922689586}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &1551708519816586297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479115203922689586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 1
+--- !u!114 &5237278004268703983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479115203922689586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &7604649717228644612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479115203922689586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04657bddbf61f154bbd8b7c447def3a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  scoreText: {fileID: 6098126234755768299}
+  anim: {fileID: 5784489196486234361}
+  scoreManager: {fileID: 0}
+  scoreToIncrement: 20
+--- !u!95 &5784489196486234361
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2479115203922689586}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a30650788e8ebd34d8fb48e3e2414943, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2697299168309854255
 GameObject:
   m_ObjectHideFlags: 0
@@ -2881,7 +3001,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &2741938957137066828
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,7 +3131,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &2827937282463892109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3145,7 +3263,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3041261818089732363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,7 +3395,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3124619376882333665
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,7 +3527,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3253478399752746139
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,7 +3659,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3272124691492222837
 GameObject:
   m_ObjectHideFlags: 0
@@ -3676,7 +3790,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3307185645546984309
 GameObject:
   m_ObjectHideFlags: 0
@@ -3809,7 +3922,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3486870498402499895
 GameObject:
   m_ObjectHideFlags: 0
@@ -3836,9 +3948,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3486870498402499895}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -14.45, y: 0.10000086, z: 0.63}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 0.49999994, y: 0.49999994, z: 0.50000006}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2250757277366353631}
@@ -3923,6 +4035,7 @@ Transform:
   - {fileID: 8509242475880816005}
   - {fileID: 8645697020768958150}
   - {fileID: 8475374013322291986}
+  - {fileID: 509040909985879787}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4109,7 +4222,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3612145354242790630
 GameObject:
   m_ObjectHideFlags: 0
@@ -4242,7 +4354,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3683601522834705554
 GameObject:
   m_ObjectHideFlags: 0
@@ -4373,7 +4484,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3762663354669730189
 GameObject:
   m_ObjectHideFlags: 0
@@ -4506,7 +4616,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3847644880085556031
 GameObject:
   m_ObjectHideFlags: 0
@@ -4638,7 +4747,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3857340974503912797
 GameObject:
   m_ObjectHideFlags: 0
@@ -4770,7 +4878,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3983917979447577597
 GameObject:
   m_ObjectHideFlags: 0
@@ -4901,7 +5008,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &3991947872342414560
 GameObject:
   m_ObjectHideFlags: 0
@@ -5034,7 +5140,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &4064984364428289453
 GameObject:
   m_ObjectHideFlags: 0
@@ -5167,7 +5272,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &4253352017073364190
 GameObject:
   m_ObjectHideFlags: 0
@@ -5300,7 +5404,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &4324667213331297161
 GameObject:
   m_ObjectHideFlags: 0
@@ -5433,7 +5536,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &4676097884577692541
 GameObject:
   m_ObjectHideFlags: 0
@@ -5566,7 +5668,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &5062399285075307512
 GameObject:
   m_ObjectHideFlags: 0
@@ -5699,7 +5800,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &5115015400919042441
 GameObject:
   m_ObjectHideFlags: 0
@@ -5832,7 +5932,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &5140535117751950489
 GameObject:
   m_ObjectHideFlags: 0
@@ -5965,7 +6064,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &5178003678199972603
 GameObject:
   m_ObjectHideFlags: 0
@@ -6098,7 +6196,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &5186032065241481421
 GameObject:
   m_ObjectHideFlags: 0
@@ -6229,7 +6326,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &5240104865302907272
 GameObject:
   m_ObjectHideFlags: 0
@@ -6361,7 +6457,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &5308424940347573965
 GameObject:
   m_ObjectHideFlags: 0
@@ -6494,7 +6589,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &5322428058633605721
 GameObject:
   m_ObjectHideFlags: 0
@@ -6625,7 +6719,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &5575959958379494816
 GameObject:
   m_ObjectHideFlags: 0
@@ -6756,7 +6849,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &5844607472203849515
 GameObject:
   m_ObjectHideFlags: 0
@@ -6887,7 +6979,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &5983261301104230988
 GameObject:
   m_ObjectHideFlags: 0
@@ -7020,7 +7111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &6063950579204279151
 GameObject:
   m_ObjectHideFlags: 0
@@ -7153,7 +7243,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &6083255396925809135
 GameObject:
   m_ObjectHideFlags: 0
@@ -7286,7 +7375,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &6214467799621774840
 GameObject:
   m_ObjectHideFlags: 0
@@ -7418,7 +7506,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &6577979638063699548
 GameObject:
   m_ObjectHideFlags: 0
@@ -7551,7 +7638,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &6765377856780965892
 GameObject:
   m_ObjectHideFlags: 0
@@ -7684,7 +7770,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &6813052411983119676
 GameObject:
   m_ObjectHideFlags: 0
@@ -7817,7 +7902,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &6914540782295738331
 GameObject:
   m_ObjectHideFlags: 0
@@ -7950,7 +8034,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7053958348572056667
 GameObject:
   m_ObjectHideFlags: 0
@@ -8083,7 +8166,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7127624260445088224
 GameObject:
   m_ObjectHideFlags: 0
@@ -8216,7 +8298,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7181550827811833453
 GameObject:
   m_ObjectHideFlags: 0
@@ -8347,7 +8428,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7286558506514971831
 GameObject:
   m_ObjectHideFlags: 0
@@ -8480,7 +8560,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7297566851800832313
 GameObject:
   m_ObjectHideFlags: 0
@@ -8611,7 +8690,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7473415038277006605
 GameObject:
   m_ObjectHideFlags: 0
@@ -8744,7 +8822,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7481934138271337047
 GameObject:
   m_ObjectHideFlags: 0
@@ -8877,7 +8954,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7528939822913921708
 GameObject:
   m_ObjectHideFlags: 0
@@ -9008,7 +9084,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7548763611418761147
 GameObject:
   m_ObjectHideFlags: 0
@@ -9140,7 +9215,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7736336742351971378
 GameObject:
   m_ObjectHideFlags: 0
@@ -9273,7 +9347,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7752963381991852134
 GameObject:
   m_ObjectHideFlags: 0
@@ -9405,7 +9478,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7814634143241441305
 GameObject:
   m_ObjectHideFlags: 0
@@ -9538,7 +9610,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &7934177847844969969
 GameObject:
   m_ObjectHideFlags: 0
@@ -9671,7 +9742,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &8113069123508591617
 GameObject:
   m_ObjectHideFlags: 0
@@ -9803,7 +9873,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &8267761584700863545
 GameObject:
   m_ObjectHideFlags: 0
@@ -9936,7 +10005,143 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
+--- !u!1 &8334194825766960497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8902816508545093026}
+  - component: {fileID: 4598947537460435861}
+  - component: {fileID: 6098126234755768299}
+  m_Layer: 0
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &8902816508545093026
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8334194825766960497}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 509040909985879787}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 5, y: 5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4598947537460435861
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8334194825766960497}
+  m_CullTransparentMesh: 1
+--- !u!114 &6098126234755768299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8334194825766960497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: '00
+
+'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 2
+  m_fontSizeBase: 2
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &8348634470121648202
 GameObject:
   m_ObjectHideFlags: 0
@@ -10067,7 +10272,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &8454038013179500026
 GameObject:
   m_ObjectHideFlags: 0
@@ -10200,7 +10404,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &8553371467069351697
 GameObject:
   m_ObjectHideFlags: 0
@@ -10333,7 +10536,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &8691455243819239121
 GameObject:
   m_ObjectHideFlags: 0
@@ -10465,7 +10667,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &8918708552604151005
 GameObject:
   m_ObjectHideFlags: 0
@@ -10598,7 +10799,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &8951700341162146722
 GameObject:
   m_ObjectHideFlags: 0
@@ -10730,7 +10930,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &9103796663758333443
 GameObject:
   m_ObjectHideFlags: 0
@@ -10862,7 +11061,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1 &9222556680939847489
 GameObject:
   m_ObjectHideFlags: 0
@@ -10994,7 +11192,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionForce: 100
   radius: 5
-  dragReduction: 10
 --- !u!1001 &2250757277199787853
 PrefabInstance:
   m_ObjectHideFlags: 0
