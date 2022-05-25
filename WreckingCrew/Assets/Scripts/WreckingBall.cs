@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class WreckingBall : MonoBehaviour
 {
-    void Start() { PlayerPrefs.SetFloat("destruction", 0); }
 
+    public Shake shake;
+    void Start() { PlayerPrefs.SetFloat("destruction", 0);
+    shake=GameObject.FindGameObjectWithTag("Environment").GetComponent<Shake>();
+    
+    }
+    
     public AudioSource audio;
     private void OnTriggerEnter(Collider other)
     {
@@ -17,7 +22,7 @@ public class WreckingBall : MonoBehaviour
                 audio.Play();
                 PlayerPrefs.SetFloat("destruction", PlayerPrefs.GetFloat("destruction") + 500 + Mathf.Floor(Random.Range(250, 500)));
             }
-            
+            shake.shakeobject();
         }
     }
 
