@@ -23,9 +23,8 @@ public class WreckingBall : MonoBehaviour
             if (audio)
             {
                 audio.Play();
-                //PlayerPrefs.SetFloat("destruction", PlayerPrefs.GetFloat("destruction") + 500 + Mathf.Floor(Random.Range(250, 500)));
             }
-            shake.shakeobject();
+            //shake.shakeobject();
         }
     }
 
