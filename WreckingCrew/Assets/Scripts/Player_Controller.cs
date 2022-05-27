@@ -154,6 +154,7 @@ public class Player_Controller : MonoBehaviour
     }
 
     public void Stun(float stunTime) {
+        if(stunned) { return; }
         stunned = true;
         stun_timer = stunTime;
         stun_apex = stunTime/2;
