@@ -6,25 +6,30 @@ public class WreckingBall : MonoBehaviour
 {
 
     public Shake shake;
+    Game_Manager gameManager;
+
     void Start() 
     { 
         PlayerPrefs.SetFloat("destruction", 0);
-        shake=GameObject.FindGameObjectWithTag("Environment").GetComponent<Shake>(); 
+        shake=GameObject.FindGameObjectWithTag("Environment").GetComponent<Shake>();
+        gameManager = GameObject.Find("Tilt Five Prototype").GetComponent<Game_Manager>();
     }
     
     public AudioSource audio;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Delux"))
-        {
-            Explode(other);
-            BuildingDetructionScore bds = other.gameObject.GetComponentInChildren<BuildingDetructionScore>();
-            if (bds) bds.ScorePop();
-            if (audio)
+        if (gameManager.swinging) {
+            if (other.gameObject.CompareTag("Delux"))
             {
-                audio.Play();
+                Explode(other);
+                BuildingDetructionScore bds = other.gameObject.GetComponentInChildren<BuildingDetructionScore>();
+                if (bds) bds.ScorePop();
+                if (audio)
+                {
+                    audio.Play();
+                }
+                //shake.shakeobject();
             }
-            //shake.shakeobject();
         }
     }
 

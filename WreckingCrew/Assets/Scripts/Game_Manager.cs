@@ -12,6 +12,15 @@ public class Game_Manager : MonoBehaviour
     private Vector3 cloud_direction;
     private Vector2 cloud_bounds;
 
+    #region SwingCheck
+    Vector3 lastWandPosition;
+    Vector3 currentWandPosition;
+    float swingCount;
+    float stopCount;
+    public bool swinging = false;
+
+    #endregion
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +33,14 @@ public class Game_Manager : MonoBehaviour
         }
 
         cloud_bounds = new Vector2(-30, 30);
+        lastWandPosition = Vector3.zero;
+        currentWandPosition = Vector3.zero;
     }
 
     // Update is called once per frame
     void Update()
     {
+        checkSwingState();
         Vector3 delta_center = player_crane.position - tiltFive_board.position;
         if(delta_center.sqrMagnitude > 10) {
             tiltFive_board.position += delta_center*Time.deltaTime;
@@ -50,5 +62,39 @@ public class Game_Manager : MonoBehaviour
         }
 
         if(UnityEngine.Input.GetKey("escape")) { Application.Quit(); }
+    }
+    /*
+    private void FixedUpdate()
+    {
+        checkSwingState();
+        //Debug.Log(swinging);
+    }*/
+
+
+    void checkSwingState() {
+        currentWandPosition = Input.mousePosition;
+        float TwoFrameDistance = Vector3.Distance(currentWandPosition, lastWandPosition);
+        if (TwoFrameDistance > 1)
+        {
+            swingCount += Time.deltaTime;
+            stopCount = 0;
+        }
+        else {
+            stopCount += Time.deltaTime;
+        }
+
+        if (swingCount >= 0.5f)
+        {
+            swinging = true;
+        }
+
+
+        if (stopCount >= 1) {
+            swinging = false;
+            swingCount = 0;
+        }
+
+        lastWandPosition = currentWandPosition;
+
     }
 }

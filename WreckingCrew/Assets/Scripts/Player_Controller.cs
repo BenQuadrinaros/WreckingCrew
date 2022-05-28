@@ -20,6 +20,14 @@ public class Player_Controller : MonoBehaviour
     public GameObject rotatableWorld;
     public float rotationSpeed = 60.0f;
 
+    #region SwingCheck
+    Vector3 lastWandPosition;
+    Vector3 currentWandPosition;
+    int swingCount;
+    int stopCount;
+
+    #endregion
+
     #region Crane variables
     [Header("Crane Variables")]
     [SerializeField] float crane_Speed = 4f;
@@ -41,6 +49,7 @@ public class Player_Controller : MonoBehaviour
         audio_reverse = transform.Find("Audio_Reverse").gameObject.GetComponent<AudioSource>();
         reversing = false;
         minAnchorYValue = wreakingBallHingeJoint.anchor.y;
+
     }
 
     // Update is called once per frame
@@ -160,4 +169,9 @@ public class Player_Controller : MonoBehaviour
         stun_apex = stunTime/2;
         stun_orientation_position = transform.position;
     }
+
+    void checkSwing() { 
+        
+    }
+
 }
